@@ -98,25 +98,34 @@ button:hover, a:hover {
 <h2 style="text-align:center">User Profile Card</h2>
 
 <div class="card">
-  <img src="243674368_1412445275872376_164167462534974434_n.jpg" alt="John" style="width:100%">
-  <h1>Mild Kanlaya</h1>
-  <p class="title">Lecture,Computer Engineering</p>
-  <p>1630901294</p>
+  <img src="243674368_1412445275872376_164167462534974434_n.jpg"  alt="John" style="width:100%" > 
+  
+  <h1 class="popup" onclick="myFunction()"> Mild Kanlaya <span class="popuptext" id="myPopup">I'm So cute</span> </h1> 
+  <p  class="title">Lecture,Computer Engineering</p>
+  <p class="popup" onclick="myFunction1()"> 1630901294 <span class="popuptext" id="myPopup1">Lucky Number</span> </p>
   <p>Bankkok University</p>
   <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-dribbble"></i></a> 
-    <a href="#"><i class="fa fa-twitter"></i></a>  
-    <a href="#"><i class="fa fa-linkedin"></i></a>  
-    <a href="#"><i class="fa fa-facebook"></i></a> 
+    <a href=""><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a> 
+    <a href="https://www.instagram.com/mildeii_ii/?hl=th"><i class="fa fa-linkedin"></i></a>  
+    <a href="https://www.facebook.com/profile.php?id=100013207502079"><i class="fa fa-facebook"></i></a> 
   </div>
   <p><button>Contact</button></p>
 </div>
  <script>
-     function myfuntion(){
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-     }
+     // When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+function myFunction1() {
+  var popup = document.getElementById("myPopup1");
+  popup.classList.toggle("show");
+}
 
  </script>
+
+
 </body>
 </html>
